@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=\, initial-scale=1.0" />
+  <title>HTML</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,700;1,100;1,600;1,700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main id="main-doc">
+    <nav id="navbar">
+      <button class="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <header>
+        <h1>HTML Documentation</h1>
+      </header>
+      <ul>
+        <li><a href="#introduction" class="nav-link">Introduction</a></li>
+        <li><a href="#html_documents" class="nav-link">HTML Documents</a></li>
+        <li>
+          <a href="#the_doctype_declaration" class="nav-link">The DOCTYPE Declaration
+          </a>
+        </li>
+        <li><a href="#html_headings" class="nav-link">HTML Headings</a></li>
+        <li><a href="#html_paragraphs" class="nav-link">HTML Paragraphs</a></li>
+        <li><a href="#html_links" class="nav-link">HTML Links</a></li>
+        <li><a href="#html_images" class="nav-link">HTML Images</a></li>
+        <li>
+          <a href="#how_to_view_html_source?" class="nav-link">How to View HTML Source?</a>
+        </li>
+        <li>
+          <a href="#reference" class="nav-link">Reference</a>
+        </li>
+      </ul>
+
+    </nav>
+    <div class="sections">
+      <section class="main-section" id="introduction">
+        <header>
+          <h2>Introduction</h2>
+        </header>
+        <div class="sub-section">
+          <article>
+            <h3>What is HTML?</h3>
+            <ul>
+              <li>HTML stands for Hyper Text Markup Language</li>
+              <li>HTML is the standard markup language for creating Web pages</li>
+              <li>HTML describes the structure of a Web page</li>
+              <li>HTML consists of a series of elements</li>
+              <li>HTML elements tell the browser how to display the content</li>
+              <li>
+                HTML elements label pieces of content such as "this is a heading",
+                "this is a paragraph", "this is a link", etc.
+              </li>
+            </ul>
+          </article>
+          <article>
+            <h3>A Simple HTML Document</h3>
+            <h4>Example</h4>
+            <div class="code-block">
+              <div>
+                <span><</span>!DOCTYPE html<span>></span>
+              </div>
+              <div>
+                <span><</span>html<span>></span>
+              </div>
+              <div>
+                <span><</span>head<span>></span>
+              </div>
+              <div>
+                <span><</span>title<span>></span>Page Title<span><</span>/title<span>></span>
+              </div>
+              <div>
+                <span><</span>/head<span>></span>
+              </div>
+              <div>
+                <span><</span>body<span>></span>
+              </div>
+              <br>
+              <div>
+                <span><</span>h1<span>></span>My First Heading<span><</span>/h1<span>></span>
+              </div>
+              <div>
+                <span><</span>p<span>></span>My first paragraph.<span><</span>/p<span>></span>
+              </div>
+              <br>
+              <div>
+                <span><</span>/body<span>></span>
+              </div>
+              <div>
+                <span><</span>/html<span>></span>
+              </div>
+              
+            </diV>
+            <article>
+              <h3>Example Explained</h3>
+              <ul>
+                <li>The <span>
+                    <</span>!DOCTYPE html<span>>
+                      </span></code> declaration defines that this document is
+                      an HTML5 document.</li>
+                <li>The <code><span>
+                      <</span>html<span>>
+                    </span></code> element is the root element of an HTML page</li>
+                <li>The <code><span>
+                      <</span>head<span>>
+                    </span></code> element contains meta information about the HTML
+                  page.</li>
+                <li>The <code><span>
+                      <</span>title<span>>
+                    </span></code> element specifies a title for the HTML page
+                  (which
+                  is shown in the browser's title bar or in the page's tab).</li>
+                <li>The <code><span>
+                      <</span>body<span>>
+                    </span></code> element defines the document's body, and is a
+                  container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables,
+                  lists,
+                  etc.</li>
+                <li>The <code><span>
+                      <</span>h1<span>>
+                    </span></code> element defines a large heading.</li>
+                <li>The <code><span>
+                      <</span>p<span>>
+                    </span></code> element defines a paragraph.</li>
+              </ul>
+            </article>
+            <article>
+              <h3>What is an HTML Element?</h3>
+              <p>An HTML element is defined by a start tag, some content, and an end tag:</p>
+              <p>
+                <span>
+                  <</span>tagname<span>>
+                    </span><strong>Content goes here...</strong><span>
+                      <</span>/tagname<span>>
+                        </span>
+              </p>
+              <p>The HTML <strong>element</strong> is everything from the start tag to the end tag:</p>
+              <p><span>
+                  <</span>h1<span>>
+                    </span>My First Heading.<span>
+                      <</span>/h1<span>>
+                        </span></p>
+              <p><span>
+                  <</span>p<span>>
+                    </span>My first paragraph.<span>
+                      <</span>/p<span>>
+                        </span></p>
+              <table>
+                <tbody>
+                  <tr>
+                    <th>Start tag</th>
+                    <th>Element content</th>
+                    <th>End tag</th>
+                  </tr>
+                  <tr>
+                    <td><span>
+                        <</span>h1<span>>
+                          </span></td>
+                    <td>My First Heading</td>
+                    <td><span>
+                        <</span>/h1<span>>
+                          </span></td>
+                  </tr>
+                  <tr>
+                    <td><span>
+                        <</span>p<span>>
+                          </span></td>
+                    <td>My first paragraph.</td>
+                    <td><span>
+                        <</span>/p<span>>
+                          </span></td>
+                  </tr>
+                  <tr>
+                    <td><span>
+                        <</span>br<span>>
+                          </span></td>
+                    <td>none</td>
+                    <td>none</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="note">
+                <strong>Note:</strong> Some HTML elements have no content (like the <span>
+                  <</span>br<span>>
+                    </span> element). These elements are called empty elements. Empty elements do not
+                    have
+                    an end tag!
+              </p>
+            </article>
+            <article>
+              <h3>Web Browsers</h3>
+              <p>The purpose of a web browser (Chrome, Edge, Firefox, Safari) is to read HTML documents and display them
+                correctly.</p>
+              <p>A browser does not display the HTML tags, but uses them to determine how to display the document:</p>
+              <img src="https://www.w3schools.com/html/img_chrome.png" alt="chrome">
+            </article>
+            <article>
+              <h3>HTML History</h3>
+              <p>Since the early days of the World Wide Web, there have been many versions of HTML:</p>
+              <table>
+                <tbody>
+                  <tr>
+                    <th>Year</th>
+                    <th>Version</th>
+                  </tr>
+                  <tr>
+                    <td>1989</td>
+                    <td>Tim Berners-Lee invented www</td>
+                  </tr>
+                  <tr>
+                    <td>1991</td>
+                    <td>Tim Berners-Lee invented HTML</td>
+                  </tr>
+                  <tr>
+                    <td>1993</td>
+                    <td>Dave Raggett drafted HTML+</td>
+                  </tr>
+                  <tr>
+                    <td>1995</td>
+                    <td>HTML Working Group defined HTML 2.0</td>
+                  </tr>
+                  <tr>
+                    <td>1997</td>
+                    <td>W3C Recommendation: HTML 3.2</td>
+                  </tr>
+                  <tr>
+                    <td>1999</td>
+                    <td>W3C Recommendation: HTML 4.01</td>
+                  </tr>
+                  <tr>
+                    <td>2000</td>
+                    <td>W3C Recommendation: XHTML 1.0</td>
+                  </tr>
+                  <tr>
+                    <td>2008</td>
+                    <td>WHATWG HTML5 First Public Draft</td>
+                  </tr>
+                  <tr>
+                    <td>2012</td>
+                    <td>WHATWG HTML5 Living Standard</td>
+                  </tr>
+                  <tr>
+                    <td>2014</td>
+                    <td>W3C Recommendation: HTML5</td>
+                  </tr>
+                  <tr>
+                    <td>2016</td>
+                    <td>W3C Candidate Recommendation: HTML 5.1</td>
+                  </tr>
+                  <tr>
+                    <td>2017</td>
+                    <td>W3C Recommendation: HTML5.1 2nd Edition</td>
+                  </tr>
+                  <tr>
+                    <td>2017</td>
+                    <td>W3C Recommendation: HTML5.2</td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+        </div>
+      </section>
+      <section class="main-section" id="html_documents">
+        <header>
+          <h2>HTML Documents</h2>
+        </header>
+        <div class="sub-section">
+          <article>
+            <p>All HTML documents must start with a document type declaration:
+              <code><span>
+                  <</span>!DOCTYPE html<span>>
+                </span></code>.
+            </p>
+            <p>The HTML document itself begins with <code><span>
+                  <</span>html <span>>
+                </span></code> and ends with
+              <code><span>
+                  <</span>/html <span>>
+                </span></code>
+            </p>
+            <p>The visible part of the HTML document is between <code><span>
+                  <</span>body <span>>
+                </span></code> and
+              <code><span>
+                  <</span>/body <span>>
+                </span></code>.
+            </p>
+            <h3>Example</h3>
+            <div class="code-block">
+              <div>
+                <span><</span>!DOCTYPE html<span>></span>
+              </div>
+              <div>
+                <span><</span>html<span>></span>
+              </div>
+              <div>
+                <span><</span>body <span>></span>
+              </div>
+              <br>
+              <div>
+                <span> <</span>h1<span>></span>My First Heading<span><</span>/h1<span>></span>
+              </div>
+              <div>
+                <span><</span>p<span>></span>My first paragraph.<span><</span>/p<span>></span>
+              </div>
+              <br>
+              <div>
+                <span><</span>/body<span>></span>
+              </div>
+              <div>
+                <span><</span>/html<span>></span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="main-section" id="the_doctype_declaration">
+        <header>
+          <h2>The DOCTYPE Declaration
+          </h2>
+        </header>
+        <div class="sub-section">
+          <article>
+            <p>The 
+              <code><span><</span>!DOCTYPE<span>></span></code> 
+              declaration represents the document type, and helps
+              browsers to display web pages correctly.
+            </p>
+            <p>It must only appear once, at the top of the page (before any HTML tags).</p>
+            <p>The 
+              <code><span><</span>!DOCTYPE<span>></span></code> declaration is not case sensitive
+            </p>
+            <p>The 
+              <code><span><</span>!DOCTYPE<span>></span></code> declaration for HTML5 is:
+            </p>
+            <div class="code-block">
+              <span><</span>!DOCTYPE html<span>></span>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="main-section" id="html_headings">
+        <header>
+          <h2>HTML Headings</h2>
+        </header>
+        <div class="sub-section">
+          <article>
+            <p>HTML headings are defined with the 
+              <code><span><</span>h1<span>></span></code> to
+              <code><span><</span>h6<span>></span></code> tags.
+            </p>
+            <p>
+              <code><span><</span>h1<span>></span></code> 
+              defines the most important heading.
+              <code><span><</span>h6<span>></span></code> 
+              defines the least important heading:
+            </p>
+            <h3>Example</h3>
+            <div class="code-block">
+              <div>
+                <span><</span>h1<span>></span>This is heading 1<span><</span>/h1<span>></span>
+              </div>
+              <div>
+                <span><</span>h2<span>></span>This is heading 2<span><</span>/h2<span>></span>
+              </div>
+              <div>
+                <span><</span>h3<span>></span>This is heading 3<span><</span>/h3<span>></span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="main-section" id="html_paragraphs">
+        <header>
+          <h2>HTML Paragraphs</h2>
+        </header>
+        <div class="sub-section">
+          <article>
+            <p>
+              HTML paragraphs are defined with the 
+              <code><span><</span> <span>></span></code> 
+              tag:
+            </p>
+            <h3>Example</h3>
+            <div class="code-block">
+              <div>
+              <span><</span>p<span>></span>This is a paragraph.<span><</span>/p<span>></span>
+              </div>
+              <div>
+              <span><</span>p<span>></span>This is another paragraph.<span><</span>/p<span>></span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="main-section" id="html_links">
+        <header>
+          <h2>HTML Links</h2>
+        </header>
+        <div class="sub-section">
+          <article>
+            <p>HTML links are defined with the 
+              <code><span><</span>a<span>></span></code>
+               tag:
+            </p>
+            <h3>Example</h3>
+            <div class="code-block">
+              <span><</span>a<span>></span> href="https://www.w3schools.com">This is a link<span><</span>/a<span>></span>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="main-section" id="html_images">
+        <header>
+          <h2>HTML Images</h2>
+        </header>
+        <div class="sub-section">
+          <article>
+            <p>HTML images are defined with the 
+              <code><span><</span>img<span>></span></code> 
+              tag.
+            </p>
+            <p>The source file (<code>src</code>), alternative text (<code>alt</code>), <code>width</code>, and
+              <code>height</code> are provided as attributes:
+            </p>
+            <h3>Example</h3>
+            <div class="code-block">
+              <span><</span>img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142"<span>></span>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="main-section" id="how_to_view_html_source?">
+        <header>
+          <h2>How to View HTML Source?</h2>
+        </header>
+        <div class="sub-section">
+          <article>
+            <p>Have you ever seen a Web page and wondered "Hey! How did they do that?"</p>
+            <h3>View HTML Source Code:</h3>
+            <p>Right-click in an HTML page and select "View Page Source" (in Chrome) or "View Source" (in Edge), or
+              similar in other browsers. This will open a window containing the HTML source code of the page</p>
+            <h3>Inspect an HTML Element:</h3>
+            <p>Right-click on an element (or a blank area), and choose "Inspect" or "Inspect Element" to see what
+              elements
+              are made up of (you will see both the HTML and the CSS). You can also edit the HTML or CSS on-the-fly in
+              the
+              Elements or Styles panel that opens.</p>
+          </article>
+        </div>
+      </section>
+      <section class="main-section" id="reference">
+        <header>
+          <h2>Reference</h2>
+        </header>
+        <div class="sub-section">
+          <article>
+            <p>
+              All the documentation in this page is taken from <a href="https://www.w3schools.com/" target="_blank">W3C</a>
+            </p>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>

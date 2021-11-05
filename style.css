@@ -1,0 +1,357 @@
+:root {
+  --color-one: #1ff2e1;
+
+  --color-two: #12db91;
+
+  --color-three: #14f964;
+
+  --color-four: #12b6db;
+
+  --color-five: #1492f9;
+}
+
+/* Start normalize style */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--color-one);
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+li {
+  list-style: none;
+}
+
+span {
+  color: #0000cd;
+}
+
+/* End normalize style */
+
+/* Start main element style */
+main {
+  position: relative;
+  color: #fff;
+}
+
+main .menu-btn {
+  width: 50px;
+  border: none;
+  padding: 10px;
+  background-color: var(--color-two);
+  position: absolute;
+  cursor: pointer;
+  border-radius: 0 10px 10px 0;
+  display: none;
+  top: 120px;
+}
+
+main .menu-btn span {
+  margin-bottom: 5px;
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+}
+
+main .menu-btn span:last-child {
+  margin-bottom: 0;
+}
+
+.open-navbar {
+  left: 0;
+}
+/* Start nav bar style */
+
+main nav {
+  position: fixed;
+  left: 0;
+  height: 95%;
+  width: 300px;
+  border-radius: 0 10px 10px 0;
+  margin: 15px 0;
+  padding: 15px;
+  display: flex;
+  background-color: var(--color-two);
+  flex-direction: column;
+  justify-content: center;
+  transition: all ease-in 1s;
+}
+
+main nav header {
+  box-shadow: 1px 15px 20px 0px #00000070;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+main nav h1 {
+  font-size: 22px;
+}
+
+main nav ul {
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+main nav ul li {
+  margin: 15px 5px;
+  transition: all ease-in 1s;
+}
+
+main nav ul li:hover {
+  margin-left: 15px;
+}
+
+main nav ul li .nav-link {
+  font-size: 18px;
+  font-weight: 600;
+  color: #633c3c;
+  transition: color ease-in 1s;
+}
+
+main nav ul li:hover .nav-link {
+  color: var(--color-five);
+}
+
+/* End nav bar style */
+
+/* Start sections style */
+main .sections {
+  position: absolute;
+  left: 25%;
+  padding: 20px;
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  grid-row-gap: 50px;
+}
+
+main .sections .main-section > header {
+  color: var(--color-five);
+  margin-bottom: 10px;
+}
+
+main .sections .main-section .sub-section {
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+/* End sections style */
+
+/* Start articles style */
+.sections .sub-section article {
+  padding: 5px;
+  margin-bottom: 10px;
+  color: #633c3c;
+  font-weight: 400;
+}
+
+.sections .sub-section article:last-of-type {
+  margin-bottom: 0;
+}
+
+.sections .sub-section article h3 {
+  color: var(--color-two);
+  margin-bottom: 10px;
+}
+
+.sections .sub-section article li {
+  padding: 5px 0;
+  position: relative;
+}
+
+.sections .sub-section article .code-block {
+  padding: 20px;
+  border-radius: 5px;
+  background-color: var(--color-three);
+}
+
+.sections .sub-section article .code-block > div {
+  margin-bottom: 12px;
+}
+
+.sections .sub-section article li::before {
+  content: " ";
+  border-width: 5px;
+  border-style: solid;
+  position: absolute;
+  border-color: transparent transparent transparent var(--color-one);
+  top: 13px;
+  left: -20px;
+}
+
+.sections .sub-section article code {
+  padding: 5px;
+  background-color: rgba(222, 222, 222, 0.3);
+  font-size: 14px;
+  border-radius: 5px;
+  margin: 0 5px;
+  color: #ed143d;
+  font-weight: 600;
+}
+
+.sections article p.note {
+  padding: 10px;
+  background-color: rgb(174 255 0 / 43%);
+  border-radius: 5px;
+}
+
+section#reference .sub-section article p {
+  margin-bottom: 0;
+}
+
+section#reference .sub-section article a {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.sub-section article table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  display: table;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+.sub-section article table tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.sub-section article table tr th {
+  text-align: left;
+  padding: 8px;
+}
+
+.sub-section article table tr td {
+  padding: 8px;
+}
+
+.sub-section article table tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+.sub-section article table tr:nth-child(even) {
+  background-color: rgb(219, 218, 218);
+}
+
+/* End articles style */
+
+/* End main element style */
+
+/* Start Media query */
+
+@media only screen and (min-width: 801px) and (max-width: 1199px) {
+  main nav {
+    width: 210px;
+    margin: 12px 0;
+    padding: 20px 15px;
+  }
+  main nav header {
+    margin-bottom: 10px;
+  }
+
+  main nav header h1 {
+    font-size: 14px;
+  }
+
+  main nav ul li .nav-link {
+    font-size: 12px;
+  }
+
+  .sections .sub-section article img {
+    width: 100%;
+  }
+
+  main nav ul li:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 800px) {
+  main .menu-btn {
+    display: block;
+    z-index: 999;
+    left: 99%;
+  }
+
+  main nav {
+    z-index: 998;
+    left: -300px;
+    height: 90%;
+    margin: 24px 0;
+  }
+
+  main nav header h1 {
+    font-size: 14px;
+  }
+
+  main nav ul li:hover {
+    margin-left: 15px;
+  }
+
+  main nav ul li .nav-link {
+    font-size: 14px;
+  }
+
+  main nav ul li:hover .nav-link {
+    color: var(--color-five);
+  }
+
+  main .sections {
+    position: relative;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sections .sub-section article img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  main nav {
+    left: -300px;
+    height: 80%;
+    z-index: 998;
+    margin: 100px 0;
+  }
+
+  main .menu-btn {
+    left: 300px;
+    display: block;
+  }
+
+  main .sections {
+    display: flex;
+    flex-direction: column;
+    left: 0;
+  }
+
+  .sections .sub-section article li,
+  .sections .sub-section article .code-block {
+    font-size: 14px;
+  }
+}
+
+/* End Media query */
